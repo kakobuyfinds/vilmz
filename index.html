@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>YoyBuy spreadsheet – produktlinks, størrelser og QC</title>
+<meta name="description" content="Brug YoyBuy spreadsheet til at sammenligne produktlinks, tjekke mål og læse QC-billeder. Få en dansk tjekliste til sko, tøj og køb fra Kina.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="da_DK">
+<meta property="og:title" content="YoyBuy spreadsheet – produktlinks, størrelser og QC">
+<meta property="og:description" content="En dansk guide til produktlinks, pasform, lagerfotos og fragt.">
+<style>
+:root{color-scheme:light;--paper:#f7f4ed;--ink:#222621;--muted:#50564c;--line:#d1d1c3;--green:#283b31;--lime:#e3efa8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.65 system-ui,sans-serif}
+.wrap{width:min(74rem,calc(100% - 2rem));margin-inline:auto}
+a{color:inherit;text-underline-offset:.2em}
+:focus-visible{outline:3px solid #b15a21;outline-offset:4px}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:.75rem;min-height:4rem;flex-wrap:wrap}
+.brand{font-weight:800;text-decoration:none}
+header span,figcaption,.muted{color:var(--muted)}
+nav{margin:1rem 0 1.5rem}
+nav ul{list-style:none;display:flex;gap:.5rem;flex-wrap:wrap;padding:0;margin:0}
+nav a{display:block;border:1px solid var(--line);padding:.55rem .8rem;border-radius:.4rem;text-decoration:none;background:#fffdf7}
+nav a:hover{background:var(--lime)}
+.hero{display:grid;grid-template-columns:1.15fr 1fr;background:var(--green);color:white;border-radius:1rem;overflow:hidden}
+.intro{padding:clamp(1.3rem,5vw,4rem);align-self:center}
+h1,h2,h3,p{margin:0 0 .75rem}
+h1,h2{font-family:Georgia,serif;line-height:1.05}
+h1{font-size:clamp(2.45rem,6vw,5rem);overflow-wrap:anywhere}
+h2{font-size:clamp(1.75rem,4vw,2.6rem)}
+h3{line-height:1.25}
+.intro p{max-width:48ch}
+.cta{display:inline-block;margin-top:.4rem;background:var(--lime);color:var(--ink);font-weight:750;text-decoration:none;padding:.65rem 1rem;border-radius:.4rem}
+figure{margin:0;min-width:0}
+img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain;background:#fff}
+.hero figure{background:#fff;display:grid;align-content:center}
+.hero figcaption{padding:.4rem .9rem}
+section{margin-block:2.7rem}
+.gallery,.guides{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.85rem}
+.gallery figure,.guides article{border:1px solid var(--line);border-radius:.65rem;overflow:hidden;background:#fffdf7}
+.gallery figcaption,.guides article{padding:.85rem}
+.guides{grid-template-columns:repeat(2,minmax(0,1fr))}
+.guides p:last-child,details p:last-child{margin-bottom:0}
+details{border-top:1px solid var(--line);padding:.85rem 0}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-weight:750}
+details p{margin-top:.55rem;max-width:70ch}
+footer{padding:1.1rem 0;border-top:1px solid var(--line)}
+@media(max-width:700px){.hero{grid-template-columns:1fr}.hero img{max-height:20rem}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.guides{grid-template-columns:1fr}}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "name":"YoyBuy spreadsheet – produktlinks, størrelser og QC",
+  "inLanguage":"da",
+  "mainEntity":[
+    {"@type":"Question","name":"Hvad er et YoyBuy spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"Det er en produktoversigt, hvor du kan samle links og sammenligne varianter, størrelser og noter, før du bestiller."}},
+    {"@type":"Question","name":"Hvordan tjekker jeg et produktlink?","acceptedAnswer":{"@type":"Answer","text":"Åbn den oprindelige vareannonce, og sammenhold sælger, modelnavn, farve og størrelsesvalg med oplysningerne i oversigten. Kontrollér lagerstatus for din variant."}},
+    {"@type":"Question","name":"Kan QC-billeder bekræfte ægthed?","acceptedAnswer":{"@type":"Answer","text":"QC-billeder viser synlige detaljer som syninger og mål. Brug dokumentation for oprindelse og sælgerens oplysninger, når ægtheden skal vurderes."}},
+    {"@type":"Question","name":"Hvad skal jeg regne med ved fragt til Danmark?","acceptedAnswer":{"@type":"Answer","text":"Sammenlign varepris, fragt, eventuelle agent- og transportørgebyrer samt eventuel moms og told. Tjek vægt, pakkemål og leveringsvilkår for den valgte rute."}}
+  ]
+}
+</script>
+<!-- Redaktionelt grundlag: Google viste menneskeverifikation, så placeringerne på første side kunne ikke bekræftes. Emnerne er undersøgt med Yoybuys hjælpecenter (www.yoybuy.com/en/help.html), QC Radar (qcradar.com/yoybuy-spreadsheet) og vejledningen på yoybuy.co.uk/guides/how-to-use-yoybuy. -->
+<!-- Sekundære søgetermer: YoyBuy produktlinks, YoyBuy købsguide, YoyBuy QC-billeder, YoyBuy fragt til Danmark. -->
+<link rel="canonical" href="https://kakobuyfinds.github.io/vilmz/">
+</head>
+<body>
+<header>
+  <div class="wrap"><a class="brand" href="https://www.cafans.com">www.cafans.com</a><span>Dansk købsguide</span></div>
+</header>
+<main class="wrap">
+  <nav aria-label="Produktkategorier">
+    <ul>
+      <li><a href="https://cafans.com/category-911-Shoes.html">Sko</a></li>
+      <li><a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">Hættetrøjer og strik</a></li>
+      <li><a href="https://cafans.com/category-913-T-Shirts.html">T-shirts</a></li>
+      <li><a href="https://cafans.com/category-914-Jackets.html">Jakker</a></li>
+      <li><a href="https://cafans.com/category-915-Pants%2FShorts.html">Bukser og shorts</a></li>
+      <li><a href="https://cafans.com/category-916-Headwear.html">Hovedbeklædning</a></li>
+      <li><a href="https://cafans.com/category-917-Sets.html">Sæt</a></li>
+      <li><a href="https://cafans.com/category-918-underwear%2Funderpants.html">Undertøj</a></li>
+      <li><a href="https://cafans.com/category-919-Jersey.html">Sportstrøjer</a></li>
+      <li><a href="https://cafans.com/category-920-Accessories.html">Tilbehør</a></li>
+    </ul>
+  </nav>
+  <div class="hero">
+    <div class="intro">
+      <h1>YoyBuy spreadsheet</h1>
+      <p>Et YoyBuy spreadsheet samler produktlinks, varianter og noter ét sted. Brug guiden til at kontrollere dine fund, sammenligne størrelser og beregne den samlede pris før et køb fra Kina.</p>
+      <a class="cta" href="https://www.cafans.com">Se udvalget hos CAFANS</a>
+    </div>
+    <figure>
+      <img src="https://www.ego-sport.pl/hpeciai/a63432ceca39f4d6581781f14515d795/pol_pl_Nike-buty-meskie-Air-Force-1-07-CW2288-111-biale-14786_1.webp" width="640" height="640" fetchpriority="high" alt="Hvid Nike Air Force 1 ’07 med hvid sål og hvid Swoosh">
+      <figcaption>Nike Air Force 1 ’07</figcaption>
+    </figure>
+  </div>
+  <section aria-labelledby="guides">
+    <h2 id="guides">Fra produktlink til bestilling</h2>
+    <div class="guides">
+      <article>
+        <h3>Tjek YoyBuy-produktlinks</h3>
+        <p>Gem det oprindelige produktlink fra Taobao, 1688 eller den relevante markedsplads. Skriv sælgernavn og modelnummer i hver sin kolonne, og notér farvevariant og lagerstatus sammen med datoen for dit tjek. Hvis et produktlink er udløbet, så søg efter modelnummeret og sammenlign billeder og materialebeskrivelse, før du erstatter linket.</p>
+      </article>
+      <article>
+        <h3>Brug en størrelsesguide med mål i centimeter</h3>
+        <p>Sammenlign fodlængden med sælgerens skostørrelsestabel, og spørg efter indlægssålens mål, hvis tabellen er uklar. Brug en trøje, der passer dig, til at måle brystbredde, skulderbredde og ærmelængde fladt. Ved bukser kan du sammenligne taljemål og indvendig benlængde. Ved kasketter er hovedomkredsen vigtigere end størrelsesnavnet.</p>
+      </article>
+      <article>
+        <h3>Læs YoyBuy QC-billeder trin for trin</h3>
+        <p>Sammenlign lagerfotos med den valgte variant. Tjek farven i neutralt lys, og se efter ujævne syninger, synlige skader og fejl ved lynlåsen. Bed om et nærbillede af størrelsesmærket eller et foto med målebånd, hvis du mangler en detalje. Ved smykker kan du sammenligne lås, overflade og armbåndets indvendige omkreds.</p>
+      </article>
+      <article>
+        <h3>Sammenlign muligheder for YoyBuy-fragt til Danmark</h3>
+        <p>Notér varepris, indenrigsfragt i Kina og eventuelt agentgebyr. Sammenlign dernæst fragtmetoder ud fra pakkens faktiske vægt og volumenvægt. Tjek sporing, forventet leveringstid og eventuelle importomkostninger. Ved en samlet forsendelse kan en større kasse ændre fragtprisen. Kontrollér returfristen hos sælgeren, inden du godkender afsendelse.</p>
+      </article>
+    </div>
+  </section>
+  <section aria-labelledby="inspiration">
+    <h2 id="inspiration">Detaljer, du kan sammenligne</h2>
+    <p class="muted">Billederne viser stileksempler. Se det aktuelle udvalg i kategorierne ovenfor.</p>
+    <div class="gallery">
+      <figure><img loading="lazy" decoding="async" width="480" height="480" src="https://assets.christiandior.com/is/image/diorprod/327C25A2970X5803_E01-1?%24default_GHC%24=&amp;crop=457%2C150%2C1095%2C1361&amp;wid=480" alt="Blå Dior Oblique-jakke med hætte og lynlås"><figcaption>Dior Oblique · hætte, lommer og lukning</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" width="640" height="640" src="https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1751298339/838745_3HBC4_2600_001_100_0000_Light.jpg" alt="Gucci-kasket med GG-mønster og buet skygge"><figcaption>Gucci GG · skygge og pasform</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" width="480" height="480" src="https://www.fashionphile.com/cdn/shop/files/d0ed2c18d3799540a9e8a48fd543fa94.jpg?v=1771537843&amp;width=480" alt="Brun Louis Vuitton Speedy 30 med monogram og lyse læderhanke"><figcaption>Louis Vuitton Speedy · hanke og mål</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" width="480" height="480" src="https://assets.hermes.com/is/image/hermesproduct/bracelet-clic-h--700001F%204P-front-1-300-0-1000-1000_b.jpg?wid=480" alt="Hermès Clic H-armbånd med H-formet metallås"><figcaption>Hermès Clic H · lås og omkreds</figcaption></figure>
+    </div>
+  </section>
+  <section aria-labelledby="faq">
+    <h2 id="faq">Ofte stillede spørgsmål</h2>
+    <details open><summary>Hvad er et YoyBuy spreadsheet?</summary><p>Det er en produktoversigt, hvor du kan samle links og sammenligne varianter, størrelser og noter, før du bestiller.</p></details>
+    <details><summary>Hvordan tjekker jeg et produktlink?</summary><p>Åbn den oprindelige vareannonce, og sammenhold sælger, modelnavn, farve og størrelsesvalg med oplysningerne i oversigten. Kontrollér lagerstatus for din variant.</p></details>
+    <details><summary>Kan QC-billeder bekræfte ægthed?</summary><p>QC-billeder viser synlige detaljer som syninger og mål. Brug dokumentation for oprindelse og sælgerens oplysninger, når ægtheden skal vurderes.</p></details>
+    <details><summary>Hvad skal jeg regne med ved fragt til Danmark?</summary><p>Sammenlign varepris, fragt, eventuelle agent- og transportørgebyrer samt eventuel moms og told. Tjek vægt, pakkemål og leveringsvilkår for den valgte rute.</p></details>
+  </section>
+</main>
+<footer><div class="wrap"><a class="brand" href="https://www.cafans.com">www.cafans.com</a></div></footer>
+</body>
+</html>
